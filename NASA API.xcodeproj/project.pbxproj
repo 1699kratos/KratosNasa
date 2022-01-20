@@ -17,6 +17,7 @@
 		E69E2AF32793A64D00725FEF /* ApodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69E2AF12793A64D00725FEF /* ApodCollectionViewCell.swift */; };
 		E69E2AF42793A64D00725FEF /* ApodCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69E2AF22793A64D00725FEF /* ApodCollectionViewCell.xib */; };
 		E69E2AF82793A69900725FEF /* ApodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69E2AF72793A69900725FEF /* ApodViewController.swift */; };
+		E69E2AFB2794FED300725FEF /* NasaClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69E2AFA2794FED300725FEF /* NasaClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		E69E2AF12793A64D00725FEF /* ApodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ApodCollectionViewCell.swift; path = "NASA API/Xib/ApodCollectionViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		E69E2AF22793A64D00725FEF /* ApodCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ApodCollectionViewCell.xib; path = "NASA API/Xib/ApodCollectionViewCell.xib"; sourceTree = SOURCE_ROOT; };
 		E69E2AF72793A69900725FEF /* ApodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodViewController.swift; sourceTree = "<group>"; };
+		E69E2AFA2794FED300725FEF /* NasaClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		E69E2AB82793A15200725FEF /* NASA API */ = {
 			isa = PBXGroup;
 			children = (
+				E69E2AF92794FEB800725FEF /* Class */,
 				E69E2AF02793A4E000725FEF /* Controller */,
 				E69E2AE92793A2A000725FEF /* Xib */,
 				E69E2AB92793A15300725FEF /* AppDelegate.swift */,
@@ -148,6 +151,14 @@
 				E69E2AF72793A69900725FEF /* ApodViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		E69E2AF92794FEB800725FEF /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				E69E2AFA2794FED300725FEF /* NasaClient.swift */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +295,7 @@
 				E69E2ABA2793A15300725FEF /* AppDelegate.swift in Sources */,
 				E69E2ABC2793A15300725FEF /* SceneDelegate.swift in Sources */,
 				E69E2AF82793A69900725FEF /* ApodViewController.swift in Sources */,
+				E69E2AFB2794FED300725FEF /* NasaClient.swift in Sources */,
 				E69E2AF32793A64D00725FEF /* ApodCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
