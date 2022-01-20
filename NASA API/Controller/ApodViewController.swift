@@ -12,6 +12,8 @@ import UIKit
 class ApodViewController: UIViewController {
 
     @IBOutlet weak var apodCollection: UICollectionView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +22,11 @@ class ApodViewController: UIViewController {
         
         apodCollection.delegate = self
         apodCollection.dataSource = self
+        
+        NasaClient.getJSON { (data) in
+           print(data)
+        }
+        
     }
 }
 
@@ -32,7 +39,7 @@ extension ApodViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
         let apodCell = collectionView.dequeueReusableCell(withReuseIdentifier: "apodCell", for: indexPath) as? ApodCollectionViewCell ?? ApodCollectionViewCell()
         apodCell.apodText.text = "Nasa"
-        apodCell.apodImage.image = UIImage(named: "")
+        //apodCell.apodImage.image = UIImage(named: "")
         
         return apodCell
     }
